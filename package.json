@@ -24,11 +24,6 @@
       "scripts": {
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
-<<<<<<< HEAD
-=======
-}
-
->>>>>>> 63ac6d9bcc0ca394a0197647eccd29a89c3b9827
 }
 
 }
