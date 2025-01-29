@@ -1,0 +1,49 @@
+.image-banner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image-banner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+  .image-banner {
+    /*Change the height if needed on smaller screens */
+    height: 80vh;
+  }
+
+  .image-banner img {
+      object-position: 50% 20%; /*Adjust image position to show relevant part of image */
+  }
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+.image-banner {
+    height: 70vh;
+ }
+  .image-banner img {
+     object-position: 50% 15%; /*Adjust image position further for mobile */
+  }
+}
+
+/* Media query for very small screen sizes */
+@media (max-width: 320px) {
+  .image-banner {
+     height: 60vh;  /* Reduce banner height further */
+  }
+
+  .image-banner img {
+     object-position: 50% 10%; /*Adjust the image position further for smaller screens */
+  }
+}

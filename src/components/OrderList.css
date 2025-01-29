@@ -1,0 +1,130 @@
+.order-list {
+  background-color: #fff;
+  padding: 2rem 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.order-list h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.order-list .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-summary {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 70%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.summary-item.total {
+  font-weight: bold;
+  color: #333;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.proceed-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-end;
+  width: auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.proceed-btn:hover {
+  background-color: #c0392b;
+}
+
+.order-table {
+  overflow-x: auto;
+  width: 70%;
+  max-width: 500px;
+}
+
+.order-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-table th,
+.order-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.order-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+  .order-table {
+      overflow-x: scroll;
+  }
+  .order-summary,
+  .order-table {
+      width: 95%;
+  }
+.order-summary{
+     padding: 15px; /* Reduced padding on smaller screens */
+ }
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .order-summary,
+  .order-table {
+    width: 98%;  /*Make summary and table full-width */
+  }
+
+  .proceed-btn {
+      padding: 8px 12px;  /* Adjust button padding */
+      font-size: 0.9rem; /* reduce button font size */
+  }
+  .summary-item{
+     font-size: 0.9rem; /*Adjust font size of summary items */
+  }
+}
+
+/* Media query for very small screen sizes */
+@media (max-width: 320px) {
+  .order-summary{
+       padding: 10px;  /* Further reduced padding */
+   }
+  .proceed-btn {
+      padding: 6px 10px;   /* Further reduce padding */
+      font-size: 0.8rem;   /* Further reduce font size */
+  }
+  .summary-item{
+      font-size: 0.8rem; /*Adjust font size further */
+   }
+}

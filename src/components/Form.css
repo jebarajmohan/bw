@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.form-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent;
+  position: relative;
+}
+
+.hero-background {
+  position: absolute;
+  top: 250;
+  left: 0;
+  right: 0;
+  height: 250px; /* Adjust height for a larger red section */
+  z-index: -2;
+  background-color: #ff004f; /* Red background color */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-image {
+  position: absolute;
+  top: 229px; /* Adjust to center the truck within the red background */
+  left: 50px; /* Align the truck towards the left */
+  max-width: 500px; /* Adjust width for larger trucks */
+  height: auto;
+  z-index: 1;
+}
+
+.form-image img {
+  width: 100%; /* Ensure image scales properly */
+  height: auto;
+}
+
+.form-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.form-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 600px;
+  height: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-header h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.form-details h2 {
+  text-align: left;
+  margin-bottom: 3px;
+  font-size: 16px;
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-details p {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #555;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin: 0 0 5px;
+  font-size: 12px;
+  color: #555;
+  display: block;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+textarea {
+  resize: none;
+  height: 70px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.time-select-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.captcha-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.captcha-container input {
+  padding: 10px;
+  width: 180px;
+}
+
+.captcha-image {
+  width: 80px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 30px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    background: #ff004f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content; /* Keep width to fit content */
+    margin-left: auto;  /* Move button to right by pushing left margin */
+    font-family: 'Poppins', sans-serif;
+    display: block; /* Ensure it takes all the space */
+}
+
+.captcha-image button {
+  border: navy;
+  background: rgb(210, 14, 14);
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 5px; /*Added left margin to provide a gap between the code and the refresh button*/
+}
+
+@media (max-width: 768px) {
+  .form-row {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .form-image {
+      top: 80px;
+      left: 10px;
+      max-width: 300px;
+  }
+
+  .form-card {
+      width: 100%;
+      padding: 10px;
+  }
+}
+/*Below styles are for small screen sizes, using media queries*/
+     @media (max-width: 768px) {      /* <-- Media query starts here, line 173 */
+         .form-row {
+             flex-direction: column;
+           gap: 10px;
+         }
+  
+        .form-image {
+             top: 80px;
+            left: 10px;
+           max-width: 300px;
+     }
+  
+       .form-card {
+            width: 100%;
+           padding: 10px;
+      }
+      }      /* <-- Media query ends here, line 189 */

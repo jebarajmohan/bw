@@ -1,0 +1,107 @@
+.header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #e74c3c;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  font-size: 1.8rem;
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cart-icon:hover {
+  color: #e74c3c;
+}
+
+.order-now-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.order-now-btn:hover {
+  background-color: #c0392b;
+}
+
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+  .nav {
+      display: none; /* Hide the navigation */
+  }
+
+.header-actions{
+    gap: 10px; /* Added gap between the cart icon and the button */
+}
+}
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .logo img{
+     height: 40px;  /* Reduced logo size on mobile */
+  }
+
+  .header-content{
+    max-width: 95%; /* Make the header a bit wider on small screens */
+ }
+
+ .order-now-btn{
+   padding: 8px 16px; /* Reduced padding on the button */
+    font-size: 14px;
+  }
+
+  .cart-icon {
+       font-size: 1.4rem;  /* Smaller icons on smaller screens */
+       margin-right: 10px;
+  }
+}
+
+/* Added Media query for very small screen sizes */
+@media (max-width: 320px) {
+  .order-now-btn{
+    font-size: 12px; /* Reduced padding on the button even more*/
+  }
+}
